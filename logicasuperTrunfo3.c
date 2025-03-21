@@ -4,21 +4,21 @@ int main() {
     // Definição das variáveis
     int atributo1, atributo2;
     int codigoCarta1, codigoCarta2;
-    float pop1, area1, pib1, densidade1; // Atributos para Mogi Mirim
-    float pop2, area2, pib2, densidade2; // Atributos para Mogi Guaçu
+    float pop1, area1, pib1, densidade1; // Atributos para São Paulo
+    float pop2, area2, pib2, densidade2; // Atributos para Rio de Janeiro
     float somaCarta1, somaCarta2;
 
-    // Atributos da cidade 1 - Mogi Mirim
-    pop1 = 95534;        // População
-    area1 = 499;         // Área (km²)
-    pib1 = 67095.62;     // PIB (milhões)
-    densidade1 = 188.6;  // Densidade Demográfica (hab/km²)
+    // Atributos do estado 1 - São Paulo
+    pop1 = 12300000;        // População
+    area1 = 1521.11;        // Área (km²)
+    pib1 = 699.2e9;         // PIB (milhões)
+    densidade1 = 8072.92;   // Densidade Demográfica (hab/km²)
 
-    // Atributos da cidade 2 - Mogi Guaçu
-    pop2 = 153658;
-    area2 = 812.8;
-    pib2 = 44538.21;
-    densidade2 = 189.1;
+    // Atributos do estado 2 - Rio de Janeiro
+    pop2 = 6000000;
+    area2 = 1182.3;
+    pib2 = 635.1e9;
+    densidade2 = 5089.69;
 
     // Menu interativo para escolher os atributos
     printf("Escolha dois atributos para a comparação:\n");
@@ -44,7 +44,7 @@ int main() {
     }
 
     // Comparar os atributos selecionados
-    printf("\nComparando os atributos entre as cidades...\n");
+    printf("\nComparando os atributos entre os estados...\n");
 
     // Comparação do primeiro atributo
     float resultado1 = 0, resultado2 = 0;
@@ -121,9 +121,9 @@ int main() {
 
     // Determinando quem venceu
     if (somaCarta1 > somaCarta2) {
-        printf("\nVencedor: Carta 1 (Mogi Mirim)\n");
+        printf("\nVencedor: Carta 1 (São Paulo)\n");
     } else if (somaCarta2 > somaCarta1) {
-        printf("\nVencedor: Carta 2 (Mogi Guaçu)\n");
+        printf("\nVencedor: Carta 2 (Rio de Janeiro)\n");
     } else {
         printf("\nEmpate!\n");
     }
